@@ -1,39 +1,27 @@
-import LogoIcon from "@/assets/logo.svg";
-import MenuIcon from "@/assets/icon-menu.svg";
+import { Button } from "@/components/Button";
 
 export const Header = () => {
   return (
-    <header className="py-4 border-b border-white/15 md:border-none">
-      <div className="container">
-        <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl mx-auto">
-          <div className="border h-10 w-10 rounded-lg inline-flex justify-center items-center">
-            <LogoIcon className="h-8 w-8" />
-          </div>
-          <div className="hidden md:block">
-          <nav className="flex gap-8 text-sm">
-            <a href="#" className="text-white/70 hover:text-white transition">
-              Credentials
-            </a>
-            <a href="#" className="text-white/70 hover:text-white transition">
-              Membership
-            </a>
-            <a href="#" className="text-white/70 hover:text-white transition">
-              Pricing
-            </a>
-          </nav>
-          </div>
-          <div className="flex gap-4 items-center">
-            <button className="relative py-2 px-3 rounded-lg font-medium text-sm bg-gradient-to-b from-[#190d2e] to-[#4a208a] shadow-[0px_0px_12px_#8c45ff]">
-              <div className="absolute inset-0">
-                <div className="rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom, black, transparent)]"></div>
-                <div className="rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top, black, transparent)]"></div>
-                <div className="absolute inset-0 shadow-[0_0_10px_rgb(140,69,255,.7)_inset] rounded-lg"></div>
-              </div>
-              <span>Join Discord</span>
-            </button>
-            <MenuIcon className="md:hidden" />
-          </div>
-        </div>
+    <header className="py-2 border-b border-white/5 sticky top-0 z-10">
+      <div className="absolute inset-0 bg-black/30 backdrop-blur -z-10"></div>
+      <div className="container flex items-center">
+        <a href="#Hero" className="inline-flex items-center justify-center h-8 w-8 rounded-lg border border-white/10 hover:border-white/20 bg-[linear-gradient(to_bottom_left,rgb(50,50,50,.3),black)]">
+          <span className="text-xs">T</span>
+          <span className="text-amber-500 font-bold">|</span>
+          <span className="text-xs">M</span>
+        </a>
+        <nav className="flex text-right gap-8 sm:gap-4 text-xs ml-auto">
+          <a href="#Services" className="text-white/25 hover:text-white transition-hover duration-300">
+                Services
+          </a>
+          <a href="#Testimonials" className="text-white/25 hover:text-white transition-hover duration-300">
+                Testimonials
+          </a>
+          <a href="#CallToAction" className="text-white/25 hover:text-white transition-hover duration-300">
+                Mentorship
+          </a>
+        </nav>
+
       </div>
     </header>
   );
