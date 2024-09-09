@@ -1,6 +1,5 @@
 "use client";
 import { DotLottieCommonPlayer, DotLottiePlayer } from "@dotlottie/react-player";
-import { dividerClasses } from "@mui/material";
 import productImage from "@/assets/service.png";
 import { useEffect, useRef, useState } from "react";
 import { animate, motion, useMotionTemplate, useMotionValue } from "framer-motion";
