@@ -55,7 +55,6 @@ export const Testimonials = () => {
                 <div className="flex flex-col mt-5">
                   <div>{testimonial.name}</div>
                   <div className="text-white/50 text-sm ">{testimonial.title}</div>
-                  <div className="text-white/50 text-sm ">{testimonial.title2}</div>
                 </div>
               </div>
             ))}
